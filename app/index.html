@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Mockup Real Estate</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+<link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+<link rel="stylesheet" href="app.css">
+<link rel="icon" type="image/png" href="http://localhost:8000/app/Real Estatelogofavicon.png">
+</head>
+
+<body>
+<div class="container"> 
+  <!-- Title Header --> 
+  	<header class="row">
+    	<div class="col-md-2">
+			<h1 class="title">Mockup Real Estate</h1><p class="subtitle">The best in housing.</p>
+        </div>
+    	<div class="col-md-8">
+			<img src="img/realestatelogo.png" alt="Mockup Real Estate"/>
+        </div>
+
+		<!--Login group-->
+		<div class="col-md-2">
+
+           	<div><button name="dsb-login" id="dsb-login" type="button" class="btn btn-success navbar-btn">Log in</button>&nbsp;<button name="dsb-signup" id="dsb-signup" type="button" class="btn btn-default navbar-btn">Sign up</button></div>
+        </div>
+   		<!--End of Login group-->
+	</header>
+
+ 	<!-- Navigation (Menu) -->
+	<div class="row">
+        <nav class="col-md-5">
+          <ul class="nav nav-pills">
+            <li class="active" roll="presentation"><a href="#/buy_view">Buy</a></li>
+            <li roll="presentation"><a href="#/rent_view">Rent</a></li>
+            <li roll="presentation"><a href="#/invest_view">Invest</a></li>
+            <li roll="presentation"><a href="#/sold_view">Sold</a></li>
+            <li roll="presentation"><a href="#/share_view">Share</a></li>
+          </ul>
+        </nav>
+ 
+		<div class="col-md-12">
+	      	<hr />
+        </div>
+    </div>
+
+    
+ 	<!-- End of Navigation (Menu) -->
+    
+    <!--Basic Search-->
+    <!-- Search box -->
+    <div class="row">
+    	<div class="col-md-9">
+			<div>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search sales by state, suburb or postcode" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                  </span>
+                </div>
+                <!--Include surrounding suburbs checkbox-->
+                <div>
+                	<input type="checkbox" checked="checked">Include surrounding suburbs</input>
+                </div>
+                <!--End of Include surrounding suburbs checkbox-->
+        <!--Search option dropdowns-->
+        	<div>
+           <!--Button toolbar-->
+           <div class="btn-toolbar">
+           		<!--Property types dropdown-->
+               <div class="btn-group">
+                    <button type="button" href="#" class="btn btn-default dropdown-toggle" id="ddmPropertyType" data-toggle="dropdown" aria-expanded="false">
+                        All Property Types
+                        <span class="caret"></span>
+                        </button>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="ddmPropertyType">
+                        <li role="presentation"><a role="menuitem" tabindex="0" href="#">All property types</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="1" href="#">House</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="2" href="#">Villa</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="3" href="#">Apartment</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="4" href="#">Unit</a></li>
+                      </ul>
+                </div>
+                <!--End of Property types dropdown-->
+                
+                <!--Minimum number of beds dropdown-->
+                <div class="btn-group">
+                    <button type="button" href="#" class="btn btn-default dropdown-toggle" id="ddmMinBeds" data-toggle="dropdown" aria-expanded="false">
+                        Min Beds
+                        <span class="caret"></span>
+                        </button>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="ddmMinBeds">
+                        <li role="presentation"><a role="menuitem" tabindex="0" href="#">1</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="1" href="#">2</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="2" href="#">3</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="3" href="#">4</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="4" href="#">5</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="5" href="#">6</a></li>
+                        
+                      </ul>
+                </div>
+                <!--End of Minimum number of beds dropdown-->                
+                
+                <!--Maximum number of beds dropdown-->                
+                <div class="btn-group">
+                    <button type="button" href="#" class="btn btn-default dropdown-toggle" id="ddmMaxBeds" data-toggle="dropdown" aria-expanded="false">
+                        Max Beds
+                        <span class="caret"></span>
+                        </button>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="ddmMaxBeds">
+                        <li role="presentation"><a role="menuitem" tabindex="0" href="#">1</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="1" href="#">2</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="2" href="#">3</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="3" href="#">4</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="4" href="#">5</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="5" href="#">6</a></li>
+                        
+                      </ul>
+                </div>
+                <!--End of Maximum number of beds dropdown-->                
+
+				<!--Minimum price of houses dropdown-->
+                <div class="btn-group">
+                    <button type="button" href="#" class="btn btn-default dropdown-toggle" id="ddmMinPrice" data-toggle="dropdown" aria-expanded="false">
+                        Min Price
+                        <span class="caret"></span>
+                        </button>
+                      <ul class="dropdown-menu dropdown-menu-currency" role="menu" aria-labelledby="ddmMinPrice">
+                        <li role="presentation"><a role="menuitem" tabindex="0" href="#">$210,000</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="1" href="#">$250,000</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="2" href="#">$300,000</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="3" href="#">$350,000</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="4" href="#">$400,000</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="5" href="#">$450,000</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="6" href="#">$400,000</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="7" href="#">$1,000,000</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="8" href="#">$200,000</a></li>
+                      </ul>
+                </div>
+				<!--End of Minimum price of houses dropdown-->                
+
+				<!--Maximum price of houses dropdown-->                
+                <div class="btn-group">
+                    <button type="button" href="#" class="btn btn-default dropdown-toggle" id="ddmMaxPrice" data-toggle="dropdown" aria-expanded="false">
+                        Max Price
+                        <span class="caret"></span>
+                        </button>
+                      <ul class="dropdown-menu dropdown-menu-currency" role="menu" aria-labelledby="ddmMaxPrice">
+                        <li role="presentation"><a role="menuitem" tabindex="0" href="#">$210,000</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="1" href="#">$250,000</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="2" href="#">$300,000</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="3" href="#">$350,000</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="4" href="#">$400,000</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="5" href="#">$450,000</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="6" href="#">$400,000</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="7" href="#">$1,000,000</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="8" href="#">$200,000</a></li>
+                      </ul>
+                  </div>
+				<!--End of Maximum price of houses dropdown-->                
+                          
+			</div>
+            <!--End of Button toolbar-->  
+        </div>  
+        <!--End of Search option dropdowns-->            
+    </div>
+</div>
+        <!--End of Search box-->
+            <div class="col-md-3">
+        		<div id="map" ></div>
+			</div>
+	</div>
+    <!--End of Basic Search-->
+        
+
+	<div class="row">            
+        <div class="col-md-12">
+	        <hr />
+        </div>
+        <div class="col-md-12">
+            <h3 id="region-name">
+            </h3>
+		</div>
+    </div>
+    <!--End of Search option dropdowns-->
+	<div class="row">
+      <div ng-view></div>
+      <div>Real Estate Mockup <span app-version></span></div>
+    </div>
+ </div>
+  
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  
+
+<!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  --> 
+<script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<!--<script src="bower_components/bootstrap/js/dropdown.js"></script>-->
+<!-- <script src="bower_components\svg.js/dist/svg.js"></script> --> 
+<script src="bower_components/raphael/raphael-min.js"></script>
+<script src="bower_components/angular/angular.js"></script> 
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="components/version/version.js"></script> 
+<script src="components/version/version-directive.js"></script> 
+<script src="components/version/interpolate-filter.js"></script>
+
+<script src="app.js"></script> 
+<script src="buy_view/buy_view.js"></script> 
+<script src="rent_view/rent_view.js"></script> 
+<script src="invest_view/invest_view.js"></script> 
+<script src="sold_view/sold_view.js"></script> 
+<script src="share_view/share_view.js"></script> 
+
+
+<script src="components/version/map.js"></script>
+
+</body>
+</html>
